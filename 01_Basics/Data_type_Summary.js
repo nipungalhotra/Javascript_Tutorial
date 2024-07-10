@@ -7,7 +7,7 @@ const score = 100
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
-console.log(id===anotherId)
+//onsole.log(id===anotherId)
 
 // Reference Type(Non-Primitive)
 // Arrayas , Objects, Functions 
@@ -23,4 +23,29 @@ const myfunction=function(){
     console.log("Hello world");
 }
 
-console.log(typeof heros)
+//console.log(typeof heros)
+
+//++++++++++++++++++++++++++++++++++++++
+//Stack (Primitive), Heap(Non-Primitive)
+
+let myYoutube = "nipungalohtradotcom"
+let anotherName = myYoutube
+anotherName = "galhotranipundotcom"
+console.log(anotherName)
+console.log((myYoutube));
+
+
+let user1 = {
+    email:"user1@gmail.com",
+    upi :"user1@yblyesbank"
+
+}
+let user2={
+    email:"user2@gmail.com",
+    upi:"user2@yblyesbank"
+}
+let user3 =user2
+
+user2.email="hitesh@google.com"
+console.log(user2.email)
+console.log(user3.email);
